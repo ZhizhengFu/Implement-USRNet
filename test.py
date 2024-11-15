@@ -50,11 +50,6 @@ def main():
         )
 
     # ----------------------------------------
-    # save code snapshot
-    # ----------------------------------------
-    # save_code_snapshot(os.path.join(opt['path']['log'], 'codes'))
-
-    # ----------------------------------------
     # seed
     # ----------------------------------------
     seed = opt['train']['manual_seed']
@@ -111,11 +106,6 @@ def main():
         visuals = model.current_visuals()
         E_img = util.tensor2uint(visuals['E'])
         H_img = util.tensor2uint(visuals['H'])
-        # -----------------------
-        # save estimated image E
-        # -----------------------
-        # save_img_path = os.path.join(img_dir, '{:s}.png'.format(img_name))
-        # util.imsave(E_img, save_img_path)
         # -----------------------
         # calculate PSNR
         # -----------------------
