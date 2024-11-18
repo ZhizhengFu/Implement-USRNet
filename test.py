@@ -94,8 +94,6 @@ def main():
 
     for test_data in test_loader:
         idx += 1
-        if idx>1:
-            break
         image_name_ext = os.path.basename(test_data['L_path'][0])
         img_name, ext = os.path.splitext(image_name_ext)
         img_dir = os.path.join(opt['path']['images'], img_name)
