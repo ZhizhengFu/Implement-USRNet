@@ -16,7 +16,7 @@ from utils.utils_training import seed_everywhere, save_code_snapshot
 
 
 def main():
-    wandbconfig = True
+    wandbconfig = False
     opt = option.parse('./options/train_usrnet.json')
     util.mkdirs((path for key, path in opt['path'].items() if 'pretrained' not in key))
     optim_name = f'bs{opt["datasets"]["train"]["dataloader_batch_size"]}-loss_{opt["train"]["G_lossfn_type"]}-lr_{opt["train"]["G_optimizer_lr"]}-G_scheduler_milestones_{opt["train"]["G_scheduler_milestones"]}'
@@ -25,9 +25,9 @@ def main():
     # ----------------------------------------
     # update opt
     # ----------------------------------------
-    init_iter, init_path_G = option.find_last_checkpoint(opt['path']['models'], net_type='G')
-    opt['path']['pretrained_netG'] = init_path_G
-    current_step = init_iter
+    # init_iter, init_path_G = option.find_last_checkpoint(opt['path']['models'], net_type='G')
+    # opt['path']['pretrained_netG'] = init_path_G
+    current_step = 0
     border = opt['scale']
 
     # ----------------------------------------
@@ -96,7 +96,7 @@ def main():
                                      drop_last=False, pin_memory=True)
         else:
             raise NotImplementedError("Phase [%s] is not recognized." % phase)
-        
+
     '''
     # ----------------------------------------
     # Step--3 (initialize model)

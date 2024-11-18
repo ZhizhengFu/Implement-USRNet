@@ -21,7 +21,6 @@ def main():
     optim_name = f'bs{opt["datasets"]["train"]["dataloader_batch_size"]}-loss_{opt["train"]["G_lossfn_type"]}-lr_{opt["train"]["G_optimizer_lr"]}-G_scheduler_milestones_{opt["train"]["G_scheduler_milestones"]}'
     run_id = datetime.now().strftime("%Y%m%d-%H%M")
     expr_name = f'USRNet-{run_id}-{optim_name}'
-    model_path = 'model_zoo/usrnet.pth'
     border = opt['scale']
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
@@ -75,7 +74,7 @@ def main():
                                      shuffle=False, num_workers=1,
                                      drop_last=False, pin_memory=True)
 
-        
+
     '''
     # ----------------------------------------
     # Step--3 (initialize model)
