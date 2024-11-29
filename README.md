@@ -15,6 +15,8 @@
 | `train.py` | **training code** |
 | `test.py` | **test code** |
 
+[paper translation](USRNet.pdf)
+
 ## Instructions
 
 1. Clone the repository
