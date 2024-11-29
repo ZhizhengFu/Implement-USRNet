@@ -9,7 +9,7 @@
 | `model_zoo/` | pre-trained models |
 | `models/` | model files |
 | `testsets/` | test images |
-| `urils` | utility functions |
+| `utils/` | utility functions |
 | `main_test_bicubic.py` `main_test_realapplication.py` `main_test_table1.py` | test code for images and tables in the paper |
 | `USRNet.yaml` | conda environment file |
 | `train.py` | **training code** |
