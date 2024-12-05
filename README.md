@@ -41,8 +41,5 @@ When run `main_test_bicubic.py` `main_test_realapplication.py` `main_test_table1
 
 ## Visualize training Loss/PSNR
 
-<img src="./img/loss.png" width="40%" style="display:inline-block; margin-right:10px;">
-<img src="./img/psnr.png" width="40%" style="display:inline-block; margin-right:10px;">
-
 | ![Image 1](./img/loss.png) | ![Image 2](./img/psnr.png) |
 |-----------------------|-----------------------|
