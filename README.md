@@ -37,3 +37,11 @@
 I use `wandb` to log the training process. You can change `wandbconfig` to `True` in `test.py` and `train.py` if you want to use it.
 
 When run `main_test_bicubic.py` `main_test_realapplication.py` `main_test_table1.py`, you need to change the `model_name` variable in the code to the name of the pre-trained model in the `model_zoo` folder.
+
+## Visualize training Loss/PSNR
+
+![loss](./img/loss.png)
+
+---
+
+![psnr](./img/psnr.png)
