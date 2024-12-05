@@ -1,4 +1,4 @@
-# Implement-of-USRNet
+# Implement-USRNet
 
 ## File Structure
 
@@ -16,7 +16,7 @@
 | `train.py` | **training code** |
 | `test.py` | **test code** |
 
-[paper translation](USRNet.pdf)
+## [paper translation](USRNet.pdf)
 
 ## Instructions
 
