@@ -4,6 +4,7 @@
 
 | File/Folder | Description |
 | --- | --- |
+| `img/` | img for readme |
 | `options/` | configuration files |
 | `kernels/` | pre-trained kernels |
 | `model_zoo/` | pre-trained models |
