@@ -1,5 +1,7 @@
 # Implement-USRNet
 
+This repository is an unofficial implementation of the paper [Deep Unfolding Network for Image Super-Resolution](https://openaccess.thecvf.com/content_CVPR_2020/papers/Zhang_Deep_Unfolding_Network_for_Image_Super-Resolution_CVPR_2020_paper.pdf)
+
 ## File Structure
 
 | File/Folder | Description |
@@ -43,3 +45,15 @@ When run `main_test_bicubic.py` `main_test_realapplication.py` `main_test_table1
 
 | ![Image 1](./img/loss.png) | ![Image 2](./img/psnr.png) |
 |-----------------------|-----------------------|
+
+## Citation
+
+```BibTex
+@inproceedings{zhang2020deep, % USRNet
+  title={Deep unfolding network for image super-resolution},
+  author={Zhang, Kai and Van Gool, Luc and Timofte, Radu},
+  booktitle={IEEE Conference on Computer Vision and Pattern Recognition},
+  pages={3217--3226},
+  year={2020}
+}
+```
